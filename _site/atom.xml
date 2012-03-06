@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>mamonluk</title>
+ <link href="http://tom.preston-werner.com/atom.xml" rel="self"/>
+ <link href="http://tom.preston-werner.com/"/>
+ <updated>2012-03-06T12:10:49-08:00</updated>
+ <id>http://mamonluk.github.com/</id>
+ <author>
+   <name>mamonluk</name>
+   <email>mamonluk7@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Android Week#4</title>
+   <link href="http://tom.preston-werner.com/2012/03/05/Android_week4.html"/>
+   <updated>2012-03-05T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/03/05/Android_week4</id>
+   <content type="html">&lt;h1&gt;Android Week#4&lt;/h1&gt;
+
+&lt;p class=&quot;meta&quot;&gt;2 Feb 2011 - San Francisco&lt;/p&gt;
+
+
+&lt;p&gt;&lt;code&gt;sdfsdf&lt;/code&gt;
+* Any kind of ssdfsdftrsdfsding you create, should definitely in the string resource file. You should put it in .xml file
+* The advantage of using xml file in resource file is you don't have to recompile the data. If you want to change the string you just need to modify the xml file.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearLayout&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;xmlns:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//notice something different all the xml layout start with android:name, //android:string…etc but this one starts with xmlns:android, &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//this is the only one that has android in the back. &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//All other attributes starts with android:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android Week#3</title>
+   <link href="http://tom.preston-werner.com/2012/02/02/Android_week3.html"/>
+   <updated>2012-02-02T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/02/02/Android_week3</id>
+   <content type="html">&lt;h1&gt;Android Week#3&lt;/h1&gt;
+
+&lt;p class=&quot;meta&quot;&gt;2 Feb 2011 - San Francisco&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Any kind of string you create, should definitely in the string resource file. You should put it in .xml file&lt;/li&gt;
+&lt;li&gt;The advantage of using xml file in resource file is you don't have to recompile the data. If you want to change the string you just need to modify the xml file.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearLayout&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;xmlns:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//notice something different all the xml layout start with android:name, //android:string…etc but this one starts with xmlns:android, &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//this is the only one that has android in the back. &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//All other attributes starts with android:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;h1&gt;For colors.xml&lt;/h1&gt;
+
+&lt;p&gt;located in res/values/ - you need to create this file manually, filename doesn't need to be colors.xml&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Read chapter 3 pp64 (Android pro) this is the most important chapter in the textbook&lt;/li&gt;
+&lt;li&gt;all your resource file needs to have &amp;lt;?xml version=&quot;1&quot; encoding=&quot;utf=8&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Inside the color.xml&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; 
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f00&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;blue&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0000&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;green&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f0f0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Inside your main.xml&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;nl&quot;&gt;android:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;textColor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@color/red&amp;quot;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//this will automatically look for variable color name red&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;andoird:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;helloWorld&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Inside R.java&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cs211d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;attr&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;color&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x7f030001&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x7f040001&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;layout&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x7f001&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;string&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...;&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x9&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xA&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;h1&gt;In AndroidManifest.xml&lt;/h1&gt;
+
+&lt;p&gt;located in the root of a project, this file contain the complete detail of each project i.e. contain the activities, you can modify this file so that you will be in &lt;strong&gt;debug mode&lt;/strong&gt; , also this is modifiable&lt;/p&gt;
+
+&lt;h1&gt;how to debug your program&lt;/h1&gt;
+
+&lt;p&gt;In android debug has 2 context/meaning&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;loading into your device and debuging it&lt;/li&gt;
+&lt;li&gt;using logcat&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;log class&lt;/h1&gt;
+
+&lt;p&gt;made for logging information for our program, need to import in your code &lt;code&gt;import android.util.Log&lt;/code&gt;. Also it comes with static method&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;int Log.e(...) //for error&lt;/li&gt;
+&lt;li&gt;int Log.w(...) //for warnings&lt;/li&gt;
+&lt;li&gt;int Log.i(...) //for information message&lt;/li&gt;
+&lt;li&gt;int Log.d(...) //for debug message&lt;/li&gt;
+&lt;li&gt;int Log.v(...) //verbose message&lt;/li&gt;
+&lt;li&gt;int wtf        //what a terrible function&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Sample Code
+&lt;code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;try 
+{
+    String tag=&quot;In my lost hw&quot;;
+} catch(Exception e) { Log.e (tag, &quot;my error ....&quot;); }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Log.v(tag, message)&lt;/li&gt;
+&lt;li&gt;Log.d(tag, message)&lt;/li&gt;
+&lt;li&gt;Log.d(tag, message, e)&lt;/li&gt;
+&lt;li&gt;Log.e(tag, message)&lt;/li&gt;
+&lt;li&gt;Log.e(tag, message, e)&lt;/li&gt;
+&lt;li&gt;Log.i(tag, message)&lt;/li&gt;
+&lt;li&gt;Log.i(tag, message, e)&lt;/li&gt;
+&lt;li&gt;Log.w(tag, message)&lt;/li&gt;
+&lt;li&gt;Log.w(tag, message, e)&lt;/li&gt;
+&lt;li&gt;Log.wtf(tag, message)&lt;/li&gt;
+&lt;li&gt;Log.wtf(tag, message, e)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+
+&lt;h1&gt;Accessing logcat in command line&lt;/h1&gt;
+
+&lt;p&gt;type in &lt;code&gt;adb logcat&lt;/code&gt; located in platform-tools folder&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Abbase provided file called &lt;code&gt;lcat&lt;/code&gt; located in his home directory
+
+&lt;ul&gt;
+&lt;li&gt;will filterized your logcat&lt;/li&gt;
+&lt;li&gt;@use: lcat &quot;hw#1&quot;&lt;/li&gt;
+&lt;li&gt;@use: lcat -e   //empty logcat&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb logcat -f my_oldlogcat&lt;/code&gt; //saves the current logcat&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb logcat -d&lt;/code&gt; - dumps the current message then stop&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb logcat MyActibity:I MyApp:D *:S&lt;/code&gt;  //show information, show debug message, don't show reast of the file supress it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android Week#2</title>
+   <link href="http://tom.preston-werner.com/2012/01/25/Android_week2.html"/>
+   <updated>2012-01-25T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/01/25/Android_week2</id>
+   <content type="html">&lt;h1&gt;Android Week#2&lt;/h1&gt;
+
+&lt;p class=&quot;meta&quot;&gt;22 Nov 2011 - San Francisco&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;1.5 obsolete&lt;/li&gt;
+&lt;li&gt;2.1 2.2 2.3 are good version
+*Android - there are two separate package - SDK starter package(install this first), SDK components(install this second)&lt;/li&gt;
+&lt;li&gt;Install SDK starter package in C:\Google or C:\Android&lt;/li&gt;
+&lt;li&gt;http://developer.android.com/sdk&lt;/li&gt;
+&lt;li&gt;install eclipse 3.6&lt;/li&gt;
+&lt;li&gt;after installing SDK - tool folder will be created, inside there is a program called android, type in &lt;code&gt;android&lt;/code&gt; then a window will open&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+
+&lt;h1&gt;Eclipse plugins for Android - need to install ADT&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Help -&gt; install new software -&gt; Available SOftware&lt;/li&gt;
+&lt;li&gt;Android Development Tools for Name&lt;/li&gt;
+&lt;li&gt;http://dl-ssl.google.com/android/eclipse&lt;/li&gt;
+&lt;li&gt;After installing plugin you need to specify where android folder is i.e. window -&gt; preference -&gt; Android&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+
+&lt;h1&gt;Creating new project&lt;/h1&gt;
+
+&lt;p&gt;After creating a new project - you need to create AVD=andriod virtual device&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Remem if you are not using eclipse to compile your android you need to install ant - ant is created to compile java programs, this is the same as make in c/c++&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ant uses xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Remem Android does not use JVM instead it uses dalvik compiler&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JAVA_HOME&lt;/code&gt; variable will show you where java is installed&lt;/li&gt;
+&lt;li&gt;Create variable &lt;code&gt;ANT_HOME&lt;/code&gt; and point it to ant directory&lt;/li&gt;
+&lt;li&gt;create PATH = $PATH:$JAVA_HOME/bin:$ANT_HOME/bin&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+
+&lt;h1&gt;Creating AVD&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(In eclipse) Window -&gt; Andoird SDK -&gt; AVD manager
+
+&lt;ul&gt;
+&lt;li&gt;pick a name for emulator - like em22, em16&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Another way of creating AVD (command line)
+  *in tools folder type &quot;android&quot;. then window will pop out&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+
+&lt;h1&gt;Creating Project in eclipse&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to File -&gt; new -&gt; project -&gt; Android -&gt; android project&lt;/li&gt;
+&lt;li&gt;project name:&lt;/li&gt;
+&lt;li&gt;use default location&lt;/li&gt;
+&lt;li&gt;Build Target, Select 2.3 9(API LEVEL),  Application name, package name&lt;/li&gt;
+&lt;li&gt;create activity:______&lt;/li&gt;
+&lt;li&gt;minimum SDK version ______&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+
+&lt;h1&gt;Creating new project in command line&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;android create project --target9 --path /mypath/dir --activity Now --package my.Now --name my_prog&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;cd /mypath/dir&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ant install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;creating avd &lt;code&gt;andorid create avd -n em22 -t 9&lt;/code&gt; 9 is the API level&lt;/li&gt;
+&lt;li&gt;running the emulator &lt;code&gt;emulator -avd em22&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
+
+&lt;h1&gt;Overview of the src in Android Project&lt;/h1&gt;
+
+&lt;p&gt;Inside the gen subdirectory it contains the following&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;R.java&lt;/code&gt; - this is automatically created, contains information about layourt file,xml, do not edit this file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;assets&lt;/code&gt; - this is where you put all your file, like program&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;res&lt;/code&gt; - this contains the resoruces of you applications
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;drawable&lt;/code&gt; - contains images -JPEG, PNG&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;anim&lt;/code&gt; - subdirectory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;layout&lt;/code&gt; - GUI&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;menu&lt;/code&gt; - contain xml&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;values&lt;/code&gt; - contains strings.xml - strings.xml contains all the string variable, arrays.xml, colors.xml, styles.xml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;raw&lt;/code&gt; - this contains additional data none of them are xml file
+  *this is where you put non xml file like data file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bin&lt;/code&gt; - this contains all your jar files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;libs&lt;/code&gt; - contains the class files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bin/classes.dex&lt;/code&gt; - contains the dex file which is the executable for android device&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;Sample Program&lt;/h1&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//name HelloCS211D.java&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cs211d&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.app.Activity&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;android.os.Bundle&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hellocs211d&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Activity&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//called when activity is first created&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//there is an xml file in layout folder - res/layout/main.xml&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//later on we are going to use R.layout.string&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Inside main.xml&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xml&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Author:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;John&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Lin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;course:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cs211d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearLayout&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;xmlns:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&lt;/span&gt; 
+    &lt;span class=&quot;nl&quot;&gt;android:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orientation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;vertical&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;android:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout_width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fill_parent&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//or wrap_content&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;android:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout_height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fill_parent&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TextView&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;android:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout_width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fill_parent&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;andorid:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layout_height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;android:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;HelloWorld, Hello cs211d&amp;quot;&lt;/span&gt;  
+    &lt;span class=&quot;c1&quot;&gt;//recommend do not hard code your string instead put it in string.xml&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LinearLayout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android Week#1</title>
+   <link href="http://tom.preston-werner.com/2012/01/19/Android_week1.html"/>
+   <updated>2012-01-19T00:00:00-08:00</updated>
+   <id>http://tom.preston-werner.com/2012/01/19/Android_week1</id>
+   <content type="html">&lt;h1&gt;Android Week#1&lt;/h1&gt;
+
+&lt;p class=&quot;meta&quot;&gt;26 Jan 2012 - San Francisco&lt;/p&gt;
+
+
+&lt;p&gt;&lt;code&gt;sdfsdf&lt;/code&gt;
+1.5 Cupcake - API Level 3
+1.6 Donut   - API Level 4&lt;/p&gt;
+
+&lt;p&gt;Version 2, 2.01, 2.1 Eclair    API   is 5,6,7&lt;/p&gt;
+
+&lt;p&gt;Version 2.2.x    -  Froyo  -    API  is level 8&lt;/p&gt;
+
+&lt;p&gt;Version 2.3 - 2.3.2,   2.33 - 2.3.7    - Gingerbread   API - 9, 10&lt;/p&gt;
+
+&lt;p&gt;Version 3.0, 3.1, 3.2.x,    -   Honeycomb   API - 11, 12&lt;/p&gt;
+
+&lt;p&gt;Version 4.01  - 4.02 , 4.03   IceCreamSandwich  -  API Level 14,15  (mostly use in tablets)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There is a shell specifically built for android this is called  &quot;ash&quot;&lt;/li&gt;
+&lt;li&gt;adb command to communicate with ash&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Structure of java&lt;/h2&gt;
+
+&lt;p&gt;Apps  =&gt; Java SDK  =&gt; nataive libraries =&gt; Android Runtimes Dalvik DVM =&gt; Linux kernel&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;we will use SQLite&lt;/li&gt;
+&lt;li&gt;we will use lib&lt;/li&gt;
+&lt;li&gt;we will use webkit&lt;/li&gt;
+&lt;li&gt;we will use SSL   -  secure security layer&lt;/li&gt;
+&lt;li&gt;location manager&lt;/li&gt;
+&lt;li&gt;package manager  - putting all the different pieces of ur application together&lt;/li&gt;
+&lt;li&gt;content provider  -  provide number such as names, random number&lt;/li&gt;
+&lt;li&gt;window manager - this is the GUI that display the GUI different from Swing and AWT&lt;/li&gt;
+&lt;li&gt;activity manager - each piece in android is called activity, i.e. opening video when app is opening. Main activity&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ 
+</feed>

@@ -1,32 +1,31 @@
 ---
 layout: default
-title: Home
+title: mamonluk
 ---
 
 <div id="home">
-
+  <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.posts limit: 15 %}
-      <div class="front">
-      {% capture post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
-      {% if post_date != prev_post_date %}
-        <div align="right" class="date-container">{{ post.date | date:"%A, %e %B %Y" | upcase }}</div>
-      {% endif %}
-      {% capture prev_post_date %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
-        {% if post.post-link %}
-        <h1><a href="{{ post.post-link }}" title="External link">{{ post.title }}</a> <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></h1>
-        {% else %}
-        <h1>{{ post.title }} <a class="glyph-permalink" href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&diams;</a></h1>
-        {% endif %}
-        {{ post.content }}
-      </div>
-      {% if forloop.last == false %}
-      </br>
-      <hr class="front">
-      </br>
-      {% endif %}
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	<div id="post">
+	<hr />
+	<hr />
+	{{ post.content }}
+	</div>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	<hr />
+	<hr />
     {% endfor %}
   </ul>
 
-</div>
 
+</div>
